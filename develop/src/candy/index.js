@@ -2111,6 +2111,14 @@ var themeObject = {
       }
     },
 
+    // 108. Multi-series Stacked Bar2D Chart
+    msstackedbar2d: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4"
+      }
+    },
+
     // timeseries
     timeseries: {
       // caption styling

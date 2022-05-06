@@ -1838,7 +1838,7 @@ var themeObject = {
         linkHoverAlpha: 75
       }
     },
-    
+
     // 107 RadialBar
     radialBar: {
       chart: {
@@ -1846,6 +1846,15 @@ var themeObject = {
         labelPadding: "6px 10px 6px 10px"
       }
     },
+
+    // 108 multi-series stacked Bar2D chart
+    msstackedbar2d: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4"
+      }
+    },
+
 
     // timeseries
     timeseries: {

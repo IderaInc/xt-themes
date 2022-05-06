@@ -1776,6 +1776,13 @@ var themeObject = {
       }
     },
 
+    // multi-series stacked Bar2D chart (108)
+    msstackedbar2d: {
+      chart: {
+        drawCrossLine: 1
+      }
+    },
+
     // timeseries
     timeseries: {
       chart: {

@@ -1705,7 +1705,15 @@ var themeObject = {
         showLegend: '1',
         legendIconSides: '4'
       }
-    }
+    },
+
+    // 97 multi-series stacked bar2d chart
+    msstackedbar2d: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4"
+      }
+    },
   }
 };
 

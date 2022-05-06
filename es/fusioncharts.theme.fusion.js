@@ -1866,12 +1866,20 @@ var themeObject = {
         linkHoverAlpha: 75
       }
     },
-    
+
     // 107 RadialBar
     radialBar: {
       chart: {
         legendIconSides: "2",
         labelPadding: "6px 10px 6px 10px"
+      }
+    },
+
+    // 108 multi-series stacked bar2d chart
+    msstackedbar2d: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4"
       }
     },
 
