@@ -320,12 +320,7 @@ function listToStyles (list, options) {
 }
 
 function insertStyleElement (options, style) {
-	const metaTag = document.querySelector(`meta[http-equiv="Content-Security-Policy"]`);
-	const content = metaTag.getAttribute('content');
-  const chartNonce = content.match(/'nonce-([^']+)'/)[1];
-
-	style.setAttribute('nonce', chartNonce);
-	var target = getElement(options.insertInto);
+	var target = getElement(options.insertInto)
 
 	if (!target) {
 		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
