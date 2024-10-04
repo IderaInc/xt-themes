@@ -321,10 +321,22 @@ function listToStyles (list, options) {
 	return styles;
 }
 
-function insertStyleElement (options, style) {
+function getNonceFromMetaTag() {
 	const metaTag = document.querySelector(`meta[http-equiv="Content-Security-Policy"]`);
-	const content = metaTag.getAttribute('content');
-  const chartNonce = content.match(/'nonce-([^']+)'/)[1];
+	if (metaTag) {
+		const content = metaTag.getAttribute('content');
+		if (content) {
+			const match = content.match(/'nonce-([^']+)'/);
+			if (match) {
+				return match[1];
+			}
+		}
+	}
+	return null;
+}
+
+function insertStyleElement (options, style) {
+  const chartNonce = getNonceFromMetaTag();
 
 	style.setAttribute('nonce', chartNonce);
 	var target = getElement(options.insertInto);
